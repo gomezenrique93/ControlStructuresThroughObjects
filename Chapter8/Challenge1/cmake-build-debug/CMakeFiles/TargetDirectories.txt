@@ -1,0 +1,3 @@
+/Users/enriquegomez/Documents/Moorpark_Pace/Computer_Science/CS_M125/MyCode/programming_Challenges/Chapter8/Challenge1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/enriquegomez/Documents/Moorpark_Pace/Computer_Science/CS_M125/MyCode/programming_Challenges/Chapter8/Challenge1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/enriquegomez/Documents/Moorpark_Pace/Computer_Science/CS_M125/MyCode/programming_Challenges/Chapter8/Challenge1/cmake-build-debug/CMakeFiles/Challenge1.dir
