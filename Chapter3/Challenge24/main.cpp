@@ -41,6 +41,8 @@ int main() {
     getline(std::cin, college);
     std::cout << "Enter your profession: ";
     getline(std::cin, profession);
+    std::cout << "Enter the type of animal you have: ";
+    getline(std::cin, animal);
     std::cout <<"Enter your pet name: ";
     getline(std::cin, pet_name);
     std::cout << "\n";
@@ -50,7 +52,7 @@ int main() {
     std::cout << "There once was a person named " << name << " who lived in " << city << ". " << std::endl;
     std::cout << "At the age of " << age << ", " << name << " went to college at " << college << "." << std::endl;
     std::cout << name << " graduated and went to work as a " << profession << "." << std::endl;
-    std::cout << "Then, " << name << " adopted a(n) animal named " << pet_name << "." << std::endl;
+    std::cout << "Then, " << name << " adopted a(n) " << animal << " named " << pet_name << "." << std::endl;
     std::cout << "They both lived happily after! " << std::endl;
 return 0;
 }
