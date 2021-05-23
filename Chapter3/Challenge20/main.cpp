@@ -26,7 +26,7 @@ int main() {
     slices;
 
     //User Input Section
-    std::cout << "Enter the diameter of the pizza ";
+    std::cout << "Enter the diameter of the pizza, in inches, ";
     std::cout << "so that I can split it into equal slices: ";
     std::cin >> diameter;
 
