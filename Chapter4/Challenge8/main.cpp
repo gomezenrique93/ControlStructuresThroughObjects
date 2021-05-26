@@ -36,6 +36,6 @@ int main() {
     else if ((user_color1 == BLUE && user_color2 == YELLOW) || (user_color1 == YELLOW && user_color2 == BLUE))
        std::cout << "You get green! " << std::endl;
     else
-       std::cout << "Make sure you enter a primary color!!" << std::endl;
+       std::cout << "Make sure you enter two primary colors!!" << std::endl;
     return 0;
 }
