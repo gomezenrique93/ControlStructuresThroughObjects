@@ -31,20 +31,17 @@ int main() {
     val2 = rand();
     sum = val1 + val2;
 
-    std::cout << "This is a math tutor program!! " << std::endl;
-    std::cout << "I will display two numbers so you can try to add them!" << std::endl;
-    std::cout << "First try the problem on your own and enter your answer, once your ready hit [Enter] " << std::endl;
-    std::cout << std::setw(6) << val1 << std::endl;
-    std::cout << "+" << std::setw(5) << val2 << std::endl;
-    std::cout << "------------" << std::endl;
+    std::cout << "This is a math tutor program!!\n";
+    std::cout << "I will display two numbers so you can try to add them!\n";
+    std::cout << "First try the problem on your own and enter your answer, once your ready hit [Enter]\n";
+    std::cout << std::setw(6) << val1 << "\n";
+    std::cout << "+" << std::setw(5) << val2 << "\n";
+    std::cout << "------------" << "\n";
     std::cin >> answer;
     std::cin.get();
 
     std::cout << std::endl;
-    if (answer == sum)
-        std::cout << "Good job, you entered the correct answer!!" << std::endl;
-    else
-        std::cout << "Your answer is incorrect :( keep practicing!! " << std::endl;
+    answer == sum ? std::cout << "Your answer is correct!!\n" : std::cout << "Sorry, your answer is incorrect!!\n";
 
     return 0;
 }
