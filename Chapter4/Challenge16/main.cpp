@@ -10,20 +10,25 @@ Input Validation: Only accept positive numbers for the times.
 
 int main() {
    // Variable Section
-   std::string name1,
-   name2,
-   name3,
-   winner;
+   std::string runner1,
+   runner2,
+   runner3,
+   first_place,
+   second_place,
+   third_place;
    int minutes1,
    seconds1,
    minutes2,
    seconds2,
    minutes3,
-   seconds3;
+   seconds3,
+   run_time1,
+   run_time2,
+   run_time3;
 
    // Input Section Runner One
    std::cout << "Enter the name for the first runner: ";
-   std::cin >> name1;
+   std::cin >> runner1;
    std::cout << "Enter his run time in minutes, then seconds: \n";
    std::cout << "Minutes: ";
    std::cin >> minutes1;
@@ -41,9 +46,11 @@ int main() {
      std::cin >> seconds1;
    }
 
+   run_time1 = minutes1 + seconds1;
+
    // Input Section Runner Two
     std::cout << "Enter the name for the second runner: ";
-    std::cin >> name2;
+    std::cin >> runner2;
     std::cout << "Enter his/her run time in minutes, then seconds: \n";
     std::cout << "Minutes: ";
     std::cin >> minutes2;
@@ -61,9 +68,11 @@ int main() {
         std::cin >> seconds2;
     }
 
+    run_time2 = minutes2 + seconds2;
+
     // Input Section Runner Three
     std::cout << "Enter the name for the third runner: ";
-    std::cin >> name3;
+    std::cin >> runner3;
     std::cout << "Enter his/her run time in minutes, then seconds: \n";
     std::cout << "Minutes: ";
     std::cin >> minutes3;
@@ -81,14 +90,21 @@ int main() {
         std::cin >> seconds3;
     }
 
-    if ((minutes1 && seconds1) < (minutes2 && seconds2) < (minutes3 && seconds3)) {
-        winner = name1;
-    } else if (minutes2 && seconds2 < minutes1 && seconds1 < minutes3 && seconds3) {
-        winner = name2;
-    } else if (minutes3 && seconds3 < minutes1 && seconds1 < minutes2 && seconds2) {
-        winner = name3;
-    }
+    run_time3 = minutes3 + seconds3;
 
-    std::cout << "The runner with the fastest time is " << winner;
+    /*
+    if ((run_time1 < run_time2) && (run_time1 < run_time3)) {
+        first_place += runner1;
+    } */
+
+
+    if ((run_time3 > run_time2) && (run_time3 > run_time1)){
+        std::cout << "Third place is " << runner3 << std::endl;
+    } else if ((run_time2 > run_time1) && (run_time2 < run_time3)){
+        std::cout << "Second place is " << runner2 << std::endl;
+   } else if ((run_time1 < run_time2) && (run_time1 < run_time3)) {
+        std::cout << "First place is " << runner1 << std::endl;
+   }
+
     return 0;
 }
