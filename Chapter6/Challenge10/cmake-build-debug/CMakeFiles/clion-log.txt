@@ -1,16 +1,16 @@
-"/Users/enriquegomez/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/enriquegomez/Documents/Moorpark_Pace/Computer_Science/CS_M125/MyCode/ControlStructuresThroughObjects/Chapter6/Challenge10
--- The C compiler identification is AppleClang 11.0.0.11000033
--- The CXX compiler identification is AppleClang 11.0.0.11000033
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\gomez\Documents\MoorparkCommunityCollege\Computer_Science\CS_M125\MyCode\Programming_Challenges\Chapter6\Challenge10
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Check for working CXX compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/enriquegomez/Documents/Moorpark_Pace/Computer_Science/CS_M125/MyCode/ControlStructuresThroughObjects/Chapter6/Challenge10/cmake-build-debug
+-- Build files have been written to: C:/Users/gomez/Documents/MoorparkCommunityCollege/Computer_Science/CS_M125/MyCode/Programming_Challenges/Chapter6/Challenge10/cmake-build-debug

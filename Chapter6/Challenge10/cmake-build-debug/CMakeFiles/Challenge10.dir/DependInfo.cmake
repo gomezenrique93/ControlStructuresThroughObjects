@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/enriquegomez/Documents/Moorpark_Pace/Computer_Science/CS_M125/MyCode/ControlStructuresThroughObjects/Chapter6/Challenge10/main.cpp" "/Users/enriquegomez/Documents/Moorpark_Pace/Computer_Science/CS_M125/MyCode/ControlStructuresThroughObjects/Chapter6/Challenge10/cmake-build-debug/CMakeFiles/Challenge10.dir/main.cpp.o"
+  "C:/Users/gomez/Documents/MoorparkCommunityCollege/Computer_Science/CS_M125/MyCode/Programming_Challenges/Chapter6/Challenge10/main.cpp" "C:/Users/gomez/Documents/MoorparkCommunityCollege/Computer_Science/CS_M125/MyCode/Programming_Challenges/Chapter6/Challenge10/cmake-build-debug/CMakeFiles/Challenge10.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

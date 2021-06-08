@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Challenge10.dir/main.cpp.o"
-  "Challenge10"
+  "CMakeFiles/Challenge10.dir/main.cpp.obj"
+  "Challenge10.exe"
+  "Challenge10.exe.manifest"
   "Challenge10.pdb"
+  "libChallenge10.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
