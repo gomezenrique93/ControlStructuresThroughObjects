@@ -9,10 +9,35 @@ equal payments. The quarterly payment due on this property would be $592.68. Wri
 a program that asks the user to input the actual value of a piece of property and the
 current tax rate for each $100 of assessed value. The program should then calculate
 and report how much annual property tax a senior homeowner will be charged for this
-property and what the quarterly tax bill will be.*/
+property and what the quarterly tax bill will be.
+ */
 #include <iostream>
+#include <iomanip>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    // Variable Section
+    const int homeowner_exemption = 5000;
+    int house_value;
+    double assessed_percentage = 0.60,
+    tax_rate = 2.64,
+    property_tax,
+    quarterly_payments;
+
+    // User Input Section
+    std::cout << "What is the value of your home? ";
+    std::cin >> house_value;
+
+    // Calculation for property tax
+   property_tax = (house_value * assessed_percentage - homeowner_exemption) / 100 * tax_rate;
+
+   // Calculation for quarterly payments
+   quarterly_payments = property_tax / 4;
+
+   // Format Section
+   std::cout << std::fixed << std::showpoint << std::setprecision(2);
+
+   // Output Section
+   std::cout << "Your total property tax charges $" << property_tax << std::endl;
+   std::cout << "Your total quarterly payments $" << quarterly_payments << std::endl;
     return 0;
 }
