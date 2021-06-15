@@ -92,19 +92,52 @@ int main() {
 
     run_time3 = minutes3 + seconds3;
 
-    /*
-    if ((run_time1 < run_time2) && (run_time1 < run_time3)) {
-        first_place += runner1;
-    } */
-
-
-    if ((run_time3 > run_time2) && (run_time3 > run_time1)){
-        std::cout << "Third place is " << runner3 << std::endl;
-    } else if ((run_time2 > run_time1) && (run_time2 < run_time3)){
-        std::cout << "Second place is " << runner2 << std::endl;
-   } else if ((run_time1 < run_time2) && (run_time1 < run_time3)) {
-        std::cout << "First place is " << runner1 << std::endl;
-   }
+    // If and if/else if statement decision tree to determine the winner
+    if (run_time1 < run_time2 && run_time1 < run_time3)
+    {
+        if (run_time2 < run_time3 && run_time2 > run_time1)
+        {
+           std::cout << runner1 << " came in first place!! " << std::endl;
+           std::cout << runner2 << " came in second place!!"<< std::endl;
+           std::cout << runner3 << " came in third place!!" << std::endl;
+        }
+        else if (run_time3 < run_time2 && run_time3 > run_time1)
+        {
+         std::cout << runner1 << " came in first place!! " << std::endl;
+         std::cout << runner3 << " came in second place!! " << std::endl;
+         std::cout << runner2 << " came in third place!! " << std::endl;
+        }
+    }
+    else if (run_time2 < run_time1 && run_time2 < run_time3)
+    {
+        if (run_time1 > run_time2 && run_time1 < run_time3)
+        {
+            std::cout << runner2 << " came in first place!! " << std::endl;
+            std::cout << runner1 << " came in second place!! " << std::endl;
+            std::cout << runner3 << " came in third place!! " << std::endl;
+        }
+        else if (run_time3 > run_time2 && run_time3 < run_time1)
+        {
+            std::cout << runner2 << " came in first place!! " << std::endl;
+            std::cout << runner3 << " came in second place!! " << std::endl;
+            std::cout << runner1 << " came in third place!! " << std::endl;
+        }
+    }
+    else if (run_time3 < run_time1 && run_time3 < run_time2)
+    {
+        if (run_time2 > run_time3 && run_time2 < run_time1)
+        {
+            std::cout << runner3 << " came in first place!! " << std::endl;
+            std::cout << runner2 << " came in second place!! " << std::endl;
+            std::cout << runner1 << " came in third place!! " << std::endl;
+        }
+        else if (run_time1 > run_time3 && run_time1 < run_time2)
+        {
+           std::cout << runner3 << " came in first place!! " << std::endl;
+           std::cout << runner1 << " came in second place!! " << std::endl;
+           std::cout << runner2 << " came in third place!! " << std::endl;
+        }
+    }
 
     return 0;
 }
