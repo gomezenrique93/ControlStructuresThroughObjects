@@ -22,7 +22,7 @@ value less than 1 for time traveled.
 int main() {
     // Variable Section
     int speed,
-    time,
+    hours,
     distance;
 
     // User Input Section
@@ -36,12 +36,12 @@ int main() {
     }
 
     std::cout << "Enter the amount of hours that this vehicle was traveling: ";
-    std::cin >> time;
+    std::cin >> hours;
 
-    while (time < 1) {
+    while (hours < 1) {
      std::cout << "Please make sure that you enter a value greater than 1!! " << std::endl;
      std::cout << "Enter the amount of hours that this vehicle was traveling: ";
-     std::cin >> time;
+     std::cin >> hours;
     }
 
     // Display Table Heading
@@ -49,9 +49,9 @@ int main() {
     std::cout << "__________________\n";
 
     // Display Distance
-    for (int i = 1; i <= time; i++) {
-        distance = speed * i;
-       std::cout << i << "\t\t" << distance << "\n";
+    for (int time = 1; time <= hours; time++) {
+        distance = speed * time;
+       std::cout << time << "\t\t" << distance << "\n";
     }
     return 0;
 }
