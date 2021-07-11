@@ -11,17 +11,23 @@ the array is a Lo Shu Magic Square. Test the function in a program.
  */
 #include <iostream>
 
-void AddRowsAndColumns(const int[][3], int);
+int AddRowsAndColumns(const int[][3], int);
 
 int main() {
     int magic_square[3][3] = {{4,9,2},
                               {3,5,7},
                               {8,1,6}};
     AddRowsAndColumns(magic_square, 3);
+
+    // if/ else statement is testing to see if you have a magic square
+    if (AddRowsAndColumns(magic_square, 3) == 90)
+        std::cout << "You have a magic square!!";
+    else
+        std::cout << "You don't have a magic square...";
     return 0;
 }
 
-void AddRowsAndColumns(const int square[][3], int rows)
+int AddRowsAndColumns(const int square[][3], int rows)
 {
     int total_rows = 0;
     for (int i = 0; i < rows; i++)
@@ -38,9 +44,5 @@ void AddRowsAndColumns(const int square[][3], int rows)
             total_columns += square[i][j];
         }
     }
-
-    if (total_rows == 45 && total_columns == 45)
-        std::cout << "You have a magic square!!";
-    else
-        std::cout << "Your square is not magical...";
+    return total_rows + total_columns;
 }
