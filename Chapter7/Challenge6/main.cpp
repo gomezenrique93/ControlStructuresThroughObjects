@@ -33,11 +33,13 @@ int main() {
 
     RainOrShine.close(); // Closing file
 
-    int monthly_rainy_days = 0;
-    int monthly_sunny_days = 0;
-    int monthly_cloudy_days = 0;
-    int sunny_days = 0, rainy_days = 0, cloudy_days = 0;
-    int monthly_highest_rainy_days = 0;
+    int monthly_rainy_days = 0,
+    monthly_sunny_days = 0,
+    monthly_cloudy_days = 0,
+    sunny_days = 0,
+    rainy_days = 0,
+    cloudy_days = 0,
+    monthly_highest_rainy_days = 0;
 
     for (int row = 0; row < MONTHS; row++) {
         for (int cols = 0; cols < DAYS; cols++) {
