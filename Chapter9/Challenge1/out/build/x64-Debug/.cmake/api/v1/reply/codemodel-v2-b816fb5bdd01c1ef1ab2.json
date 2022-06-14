@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.17"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Challenge1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Challenge1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Challenge1-Debug-922654e225429e7adea5.json",
+					"name" : "Challenge1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/gomez/Documents/MoorparkCommunityCollege/Computer_Science/CS_M125/MyCode/Programming_Challenges/Chapter9/Challenge1/out/build/x64-Debug",
+		"source" : "C:/Users/gomez/Documents/MoorparkCommunityCollege/Computer_Science/CS_M125/MyCode/Programming_Challenges/Chapter9/Challenge1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

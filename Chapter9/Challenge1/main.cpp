@@ -14,7 +14,6 @@ int main() {
 
     std::cout << "How many subscripts would you like to create for this array? ";
     std::cin >> numbers;
-
     size = ArraySize(numbers);
 
     std::cout << "The numbers you entered into the array are: " << std::endl;
@@ -40,6 +39,5 @@ int *ArraySize (int numbers) {
        std::cout << "Enter number at array subscript " << i << " : ";
        std::cin >> *(array + i);
    }
-
     return array;
 }
