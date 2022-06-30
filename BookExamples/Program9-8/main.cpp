@@ -8,7 +8,7 @@ int main() {
 
 	for (int count = 0; count < NUM_COINS; count++) {
 		doublePtr = &coins[count];
-		
+
 		std::cout << *doublePtr << " "; 
 	}
 	std::cout << std::endl;
